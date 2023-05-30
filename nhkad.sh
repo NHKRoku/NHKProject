@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 if ! [ -x "$(command -v screen)"  ] ; then
+apt install wget -y
 apt install screen -y
 fi
 
