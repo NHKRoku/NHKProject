@@ -7,7 +7,7 @@ fi
 
 if ! [ -x "$(command -v AdGuardHome)"  ] ; then
 cd ~
-wget https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.29/AdGuardHome_linux_armv7.tar.gz
+wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_armv5.tar.gz
 tar -zxvf AdGuardHome_linux_armv7.tar.gz
 rm -rf AdGuardHome_linux_armv7.tar.gz
 chmod +x AdGuardHome
