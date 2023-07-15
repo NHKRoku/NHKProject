@@ -8,8 +8,8 @@ fi
 if ! [ -x "$(command -v AdGuardHome)"  ] ; then
 cd ~
 wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_armv5.tar.gz
-tar -zxvf AdGuardHome_linux_armv7.tar.gz
-rm -rf AdGuardHome_linux_armv7.tar.gz
+tar -zxvf AdGuardHome_linux_armv5.tar.gz
+rm -rf AdGuardHome_linux_armv5.tar.gz
 chmod +x AdGuardHome
 cd AdGuardHome
 cp AdGuardHome /data/data/com.termux/files/usr/bin/
