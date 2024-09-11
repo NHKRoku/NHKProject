@@ -266,12 +266,12 @@ https://tglmp02.akamaized.net/out/v1/b37a81eb3585471cb9c639c78edcdefa/manifest.m
 #KODIPROP:inputstream.adaptive.license_key=32bc2ee6869144b88bee3babf202f88e:50d3b9ec49e1570621d45822923607f7
 https://tglmp04.akamaized.net/out/v1/0f439c1d8a1a47fca9ae1fa92144306e/manifest.mpd
 #EXTINF:-1 tvg-id="014" ch-number="014" catchup="flussonic-hls" catchup-source="https://code.vthanhtivi.pw/xemlai/vieon/vtv1-hd/auto/dvr-${start}-${end}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/1.png",ＶＴＶ総合１・ハノイ
-http://p1.cvtv.xyz/vtv1?token=live
+#http://p1.cvtv.xyz/vtv1?token=live
 http://antm.dynu.net:14285/rtp/232.84.1.117:10254
 #EXTINF:-1 tvg-id="024" ch-number="024" catchup="flussonic-hls" catchup-source="https://live-zlr1.tv360.vn/manifest/dac12e23-ebcc-4c69-aaf5-5b2b8d47c41f/catchup/VTV2-1080-3_6M/VTV2-1080-3_6M.m3u8?media=true&start=${start}&stop=${end}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/2.png",ＶＴＶ理科１・ハノイ
 http://antm.dynu.net:14285/rtp/232.84.2.31:10594
 #EXTINF:-1 tvg-id="034" ch-number="034" catchup="flussonic-hls" catchup-source="https://live-zlr1.tv360.vn/manifest/f86bb850-f6ef-4c9d-b0ad-b8fe16ef27e9/catchup/1080p-5M/1080p-5M.m3u8?media=true&start=${start}&stop=${end}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/3.png",ＶＴＶエンターテイメント１・ハノイ
-http://p1.cvtv.xyz/vtv3?token=live
+#http://p1.cvtv.xyz/vtv3?token=live
 http://antm.dynu.net:14285/rtp/232.84.1.118:10260
 #EXTINF:-1 tvg-id="044" ch-number="044" catchup="flussonic-hls" catchup-source="https://code.vthanhtivi.pw/xemlai/mytv/378/auto/dvr-${start}-${end}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/4.png",ＶＴＶインターナショナル１・ハノイ
 http://antm.dynu.net:14285/rtp/232.84.2.32:10600|http://antm.dynu.net:14285/rtp/232.84.3.106:10600
