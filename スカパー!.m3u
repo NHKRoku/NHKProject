@@ -3,7 +3,6 @@
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd01
 #EXTINF:-1 tvg-id="012" ch-number="012" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE0-011-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs291&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫ総合１・大阪
 http://r3jx.djtmewibu.com/nhkg/tracks-v1a1/mono.m3u8
-http://126.48.28.85:8888/api/streams/live/3211240960/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx06
 #EXTINF:-1 tvg-id="021" ch-number="021" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE1-021-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs292&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫＥテレ１・東京
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd02
@@ -50,7 +49,7 @@ http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd05
 #EXTINF:-1 tvg-id="091" ch-number="091" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E87-091-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/523/video-${start}-${offset}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",東京ＭＸ１・東京
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd08
 #EXTINF:-1 tvg-id="092" ch-number="092" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E87-091-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/518/video-${start}-${offset}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",東京ＭＸ２・東京
-http://r3jx.djtmewibu.com/mx2/"
+http://r3jx.djtmewibu.com/mx2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="032" ch-number="032" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D56-031-400x400.png",サンテレビ１・大阪
 http://126.48.28.85:8888/api/streams/live/3208643056/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx07
