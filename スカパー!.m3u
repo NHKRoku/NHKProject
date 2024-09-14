@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-id="011" ch-number="011" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE0-011-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs291&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫ総合１・東京
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd01
 #EXTINF:-1 tvg-id="012" ch-number="012" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE0-011-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs291&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫ総合１・大阪
-http://r3jx.djtmewibu.com/nhkg/tracks-v1a1/mono.m3u8
+http://r3jx.djtmewibu.com/nhkg/index.m3u8
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx06
 #EXTINF:-1 tvg-id="021" ch-number="021" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE1-021-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs292&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫＥテレ１・東京
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd02
@@ -32,8 +32,6 @@ http://211.23.114.106:8516/http/60.251.39.91:8081/hls/70/812/ch39.m3u8
 #EXTINF:-1 tvg-id="236" ch-number="236" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-149-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs236&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="BS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_06.png",ＢＳアニマックス
 http://126.48.28.85:8888/api/streams/live/400236/m2ts?mode=2
 https://vnpt.nekocdn.xyz/memfs/68ea67df-d4e1-44cb-bdb9-179dd01b7db4.m3u8
-#EXTINF:-1 tvg-id="031k" ch-number="031" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E77-031-400x400.png",テレビ神奈川１・東京
-http://r3jx.djtmewibu.com/tvk/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="031s" ch-number="031" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E27-031-400x400.png",テレビ埼玉１・東京
 http://r3jx.djtmewibu.com/tvs/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="041" ch-number="041" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE2-041-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs294&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",日テレ１・東京
@@ -1206,10 +1204,6 @@ http://wanicelife.com:8880/29ca12143n03/3rd32332/2946
 http://wanicelife.com:8880/29ca12143n03/3rd32332/28871
 #EXTINF:-1 tvg-id="22080" group-title="BS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_06.png" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Sky-news-logo.png/320px-Sky-news-logo.png",ＢＳスカイニュース
 http://wanicelife.com:8880/29ca12143n03/3rd32332/2886
-#EXTINF:-1 tvg-logo="https://mma.prnewswire.com/media/2033277/nasa_meatball.jpg" group-title="110度CS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_07.png",ＣS NASAテレビ
-https://ythls.armelin.one/video/nA9UZF-SZoQ.m3u8
-#EXTINF:-1 tvg-logo="https://mma.prnewswire.com/media/2033277/nasa_meatball.jpg" group-title="110度CS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_07.png",ＣS NASAメディア
-https://ythls.armelin.one/video/21X5lGlDOfg.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/The_Weather_Channel_logo_2005-present.svg/2048px-The_Weather_Channel_logo_2005-present.svg.png" group-title="110度CS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_07.png",ＣS 天気予報チャンネル
 https://twcprod-live.twc-tv.com/v1/manifest/b4d4d63a49309cc5140171fb2e92485c31be1e9e/DSP_6228e4760505741a116f1ba2_twcprod-live/6bf09ce5-366b-463c-b67e-c4b799f73c3f/3.m3u8
 #EXTINF:0 tvg-logo="http://www.dalitv.com.tw/img/LOGOn.png" group-title="BS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_06.png",ＢＳ大立電視
