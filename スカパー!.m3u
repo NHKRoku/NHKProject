@@ -1,17 +1,14 @@
 #EXTM3U url-tvg="http://10.0.0.2:12345/NHK_PHP/tempest_config/epg/NHKSchedule.xml,http://epgshare01.online/epgshare01/epg_ripper_KR1.xml.gz,http://epg.112114.xyz/pp.xml,https://trada.info/epg.xml,http://lichphatsong.xyz/schedule/epg.xml,http://epgx.site/epg_noarch.xml.gz" catchup="append" catchup-days="3" catchup-source="&offset=-${offset}&utcstart=${timestamp}" billed-msg="このチューナーB-CASカード/ACAS番号:００００ ３２０６ ９３９５ ６３２２ １４５１"
 #EXTINF:-1 tvg-id="011" ch-number="011" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE0-011-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs291&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫ総合１・東京
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd01
-#EXTINF:-1 tvg-id="012" ch-number="012" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE0-011-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs291&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫ総合１・大阪
 http://r3jx.djtmewibu.com/nhkg/index.m3u8
-http://126.48.28.85:8888/api/streams/live/3211240960/m2ts?mode=2
+#EXTINF:-1 tvg-id="012" ch-number="012" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE0-011-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs291&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫ総合１・大阪
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx06
 #EXTINF:-1 tvg-id="021" ch-number="021" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE1-021-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs292&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫＥテレ１・東京
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd02
 #EXTINF:-1 tvg-id="022" ch-number="022" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE1-021-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs292&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",ＮＨＫＥテレ１・大阪
 http://126.48.28.85:8888/api/streams/live/3272102056/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd02
-#EXTINF:-1 tvg-id="101" ch-number="101" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-101-400x400.png"  catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs101&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="BS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_06.png",ＮＨＫＢＳ
-http://126.48.28.85:8888/api/streams/live/400101/m2ts?mode=2
+#EXTINF:-1 tvg-id="101" ch-number="101" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-101-400x400.png"  catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs101&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="BS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_06.png",ＮＨＫＢＳ
 https://vnpt.nekocdn.xyz/9ca1151d-7a96-4c1a-9672-8853124bba85.m3u8
 #EXTINF:-1 tvg-id="b103" ch-number="103" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-000b-101-400x400.png" group-title="BS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_06.png",ＮＨＫＢＳプレミアム４Ｋ
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs01
@@ -31,8 +28,7 @@ https://stream.ichibantv.com:3547/hybrid/play.m3u8
 https://z88.ubtvfans.com/live/rx1/59/6e4b04eb1943932fa4fde49e3959bf43/index.m3u8
 #EXTINF:-1 tvg-id="7238" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-149-400x400.png" group-title="110度CS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_07.png",ＣS アニマックス 台湾
 http://211.23.114.106:8516/http/60.251.39.91:8081/hls/70/812/ch39.m3u8
-#EXTINF:-1 tvg-id="236" ch-number="236" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-149-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs236&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="BS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_06.png",ＢＳアニマックス
-http://126.48.28.85:8888/api/streams/live/400236/m2ts?mode=2
+#EXTINF:-1 tvg-id="236" ch-number="236" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-149-400x400.png" catchup="flussonic-hls" catchup-source="http://45.58.2.147/timeshift_playlist.m3u8?cid=bs236&r=FHD&ccode=JP&m=02:dc:2b:b8:25:91&t=${start}-${offset}" group-title="BS" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_06.png",ＢＳアニマックス
 https://vnpt.nekocdn.xyz/memfs/68ea67df-d4e1-44cb-bdb9-179dd01b7db4.m3u8
 EXTINF:-1 tvg-id="031k" ch-number="031" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E77-031-400x400.png",テレビ神奈川１・東京
 http://r3jx.djtmewibu.com/tvk/tracks-v1a1/mono.m3u8
@@ -51,24 +47,24 @@ http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd05
 #EXTINF:-1 tvg-id="091" ch-number="091" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E87-091-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/523/video-${start}-${offset}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",東京ＭＸ１・東京
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd08
 #EXTINF:-1 tvg-id="092" ch-number="092" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E87-091-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/518/video-${start}-${offset}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",東京ＭＸ２・東京
-http://r3jx.djtmewibu.com/mx2/"
+http://r3jx.djtmewibu.com/mx2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="032" ch-number="032" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D56-031-400x400.png",サンテレビ１・大阪
-http://126.48.28.85:8888/api/streams/live/3208643056/m2ts?mode=2
+#http://126.48.28.85:8888/api/streams/live/3208643056/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx07
 #EXTINF:-1 tvg-id="042" ch-number="042" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD2-041-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/522/video-${start}-${offset}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",毎日テレビ１・大阪
-http://126.48.28.85:8888/api/streams/live/3272202064/m2ts?mode=2
+#http://126.48.28.85:8888/api/streams/live/3272202064/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx01
 #EXTINF:-1 tvg-id="062" ch-number="062" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD3-061-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/209/video-${start}-${offset}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",朝日テレビ１・大阪
-http://126.48.28.85:8888/api/streams/live/3272302072/m2ts?mode=2
+#http://126.48.28.85:8888/api/streams/live/3272302072/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx02
 #EXTINF:-1 tvg-id="072" ch-number="072" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D76-071-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/212/video-${start}-${offset}.m3u8",テレビ大阪１・大阪
-http://126.48.28.85:8888/api/streams/live/3211841008/m2ts?mode=2
+#http://126.48.28.85:8888/api/streams/live/3211841008/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx05
 #EXTINF:-1 tvg-id="082" ch-number="082" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD4-081-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/518/video-${start}-${offset}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",関西テレビ１・大阪
-http://126.48.28.85:8888/api/streams/live/3272402080/m2ts?mode=2
+#http://126.48.28.85:8888/api/streams/live/3272402080/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx03
 #EXTINF:-1 tvg-id="102" ch-number="102" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD5-101-400x400.png" catchup="flussonic-hls" catchup-source="http://202.60.106.14:8080/513/video-${start}-${offset}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png",讀賣テレビ１・大阪
-http://126.48.28.85:8888/api/streams/live/3272502088/m2ts?mode=2
+#http://126.48.28.85:8888/api/streams/live/3272502088/m2ts?mode=2
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx04
 #EXTINF:-1 tvg-id="089" ch-number="089" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Tss_logo.svg/400px-Tss_logo.svg.png",テレビ新広島１・広島
 http://r3jx.djtmewibu.com/tss/tracks-v1a1/mono.m3u8
