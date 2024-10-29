@@ -294,20 +294,17 @@ https://tglmp02.akamaized.net/out/v1/b37a81eb3585471cb9c639c78edcdefa/manifest.m
 #KODIPROP:inputstream.adaptive.license_key=32bc2ee6869144b88bee3babf202f88e:50d3b9ec49e1570621d45822923607f7
 https://tglmp04.akamaized.net/out/v1/0f439c1d8a1a47fca9ae1fa92144306e/manifest.mpd
 #EXTINF:-1 tvg-id="014" ch-number="014" catchup="flussonic-hls" catchup-source="https://code.vthanhtivi.pw/xemlai/vieon/vtv1-hd/auto/dvr-${start}-${end}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/1.png",ＶＴＶ総合１・ハノイ
-http://thvip.site/360/2/index.m3u8
-#http://p1.cvtv.xyz/vtv1?token=live
+http://p1.cvtv.xyz/vtv1?token=live
 http://14.187.170.42:3008/rtp/232.84.1.117:10254
 #EXTINF:-1 tvg-id="024" ch-number="024" catchup="flussonic-hls" catchup-source="https://live-zlr1.tv360.vn/manifest/dac12e23-ebcc-4c69-aaf5-5b2b8d47c41f/catchup/VTV2-1080-3_6M/VTV2-1080-3_6M.m3u8?media=true&start=${start}&stop=${end}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/2.png",ＶＴＶ理科１・ハノイ
-http://thvip.site/360/3/index.m3u8
 http://14.187.170.42:3008/rtp/232.84.2.31:10594
 #EXTINF:-1 tvg-id="034" ch-number="034" catchup="flussonic-hls" catchup-source="https://live-zlr1.tv360.vn/manifest/f86bb850-f6ef-4c9d-b0ad-b8fe16ef27e9/catchup/1080p-5M/1080p-5M.m3u8?media=true&start=${start}&stop=${end}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/3.png",ＶＴＶエンターテイメント１・ハノイ
-http://thvip.site/360/4/index.m3u8
-#http://p1.cvtv.xyz/vtv3?token=live
+http://p1.cvtv.xyz/vtv3?token=live
 http://14.187.170.42:3008/rtp/232.84.1.118:10260
 #EXTINF:-1 tvg-id="044" ch-number="044" catchup="flussonic-hls" catchup-source="https://code.vthanhtivi.pw/xemlai/mytv/378/auto/dvr-${start}-${end}.m3u8" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/4.png",ＶＴＶインターナショナル１・ハノイ
 http://14.187.170.42:3008/rtp/232.84.2.32:10600|http://14.187.170.42:3008/rtp/232.84.3.106:10600
 #EXTINF:-1 tvg-id="054" ch-number="054" catchup="flussonic-hls" catchup-source="https://live-zlr1.tv360.vn/manifest/6f862904-7894-4fbb-9707-f56e4fe10d63/catchup/VTV5-HD-50fps-1080P-65M/VTV5-HD-50fps-1080P-65M.m3u8?media=true&start=${start}&stop=${end}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/5.png",ＶＴＶエスニック１・ハノイ
-#http://p1.cvtv.xyz/vtv5?token=live
+http://p1.cvtv.xyz/vtv5?token=live
 http://14.187.170.42:3008/rtp/232.84.2.33:10606
 #EXTINF:-1 tvg-id="vtv5hdtnb" ch-number="055" catchup="flussonic-hls" catchup-source="https://live-zlr1.tv360.vn/manifest/e8c66db4-15c3-44cb-873b-d0f67a3ed4b2/catchup/1080p/1080p.m3u8?media=true&start=${start}&stop=${end}" group-title="地上デ" group-logo="http://www.apab.or.jp/wp-content/themes/apab/img/logo_05.png" tvg-logo="https://cdn.hqth.me/logo/thumbs/6.png",ＶＴＶエスニック１・南西
 http://14.187.170.42:3008/rtp/232.84.3.86:11542
