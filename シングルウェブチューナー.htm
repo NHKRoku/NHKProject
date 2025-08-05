@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ウェブチューナー</title>
+<link rel="icon" href="https://www.nhk.jp/favicon.ico" sizes="48x48">
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+#video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Info Bar */
+#info-bar {
+    position: absolute;
+    top: 42px;
+    left: 350px;
+    right: 50px;
+    background: rgba(0, 0, 0, 1);
+    padding: 5px 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    transition: width 0s, left 0s;
+}
+#program-now {
+    font-size: 17px;
+    flex-grow: 1;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+#logo-clock-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+#channel-logo {
+    max-height: 27px;
+    width: auto;
+    object-fit: contain;
+}
+#clock {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* Collapsed Mode */
+.collapsed {
+    left: auto !important;
+    width: auto !important;
+    right: 50px !important;
+}
+.collapsed #program-now {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div id="video-container">
+    <video id="video" controls autoplay></video>
+
+    <!-- Info Bar -->
+    <div id="info-bar">
+        <div id="program-now">番組情報なし</div>
+        <div id="logo-clock-container">
+            <img id="channel-logo" src="" alt="Logo">
+            <div id="clock">--:--</div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Params
+const m3u8Url = new URLSearchParams(window.location.search).get("m3u8");
+const tvgId = new URLSearchParams(window.location.search).get("tvgid");
+const logoUrl = new URLSearchParams(window.location.search).get("logo");
+const xmltvUrl = new URLSearchParams(window.location.search).get("xmltv");
+
+// Set Video Source
+if (m3u8Url) document.getElementById("video").src = m3u8Url;
+if (logoUrl) document.getElementById("channel-logo").src = logoUrl;
+
+// Clock Update
+function updateClock() {
+    const now = new Date();
+    let h = now.getHours();
+    const m = now.getMinutes().toString().padStart(2, '0');
+    const p = h < 12 ? "午前" : "午後";
+    if (h === 12) h = 0;
+    else if (h > 12) h -= 12;
+    document.getElementById("clock").innerText = `${h}:${m} ${p}`;
+}
+setInterval(updateClock, 10000);
+updateClock();
+
+// EPG Fetching
+if (xmltvUrl && tvgId) {
+    fetchEPGData();
+    setInterval(fetchEPGData, 60000);
+}
+function fetchEPGData() {
+    fetch(xmltvUrl)
+        .then(res => res.text())
+        .then(xmlText => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+            const now = new Date();
+            let currentProgram = "番組情報なし";
+            const programs = Array.from(xmlDoc.querySelectorAll(`programme[channel="${tvgId}"]`));
+            for (const program of programs) {
+                const start = parseEPGTime(program.getAttribute("start"));
+                const stop = parseEPGTime(program.getAttribute("stop"));
+                if (now >= start && now <= stop) {
+                    currentProgram = program.querySelector("title").textContent;
+                    break;
+                }
+            }
+            document.getElementById("program-now").innerText = currentProgram;
+            adjustProgramNameEllipsis();
+        });
+}
+
+function parseEPGTime(epgTime) {
+    const dt = epgTime.slice(0, 14);
+    const tz = epgTime.slice(-5);
+    const utcDate = new Date(dt.replace(/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/, "$1-$2-$3T$4:$5:$6Z"));
+    const offset = (parseInt(tz.slice(1,3))*60 + parseInt(tz.slice(3,5))) * 60000;
+    return new Date(utcDate.getTime() - (tz[0] === "+" ? offset : -offset));
+}
+
+// Adjust Program Name Ellipsis Logic
+function adjustProgramNameEllipsis() {
+    const programNow = document.getElementById("program-now");
+    const logo = document.getElementById("channel-logo");
+    const clock = document.getElementById("clock");
+
+    const gap = logo.getBoundingClientRect().left - programNow.getBoundingClientRect().right;
+    if (gap < 10) {
+        programNow.style.maxWidth = `${programNow.offsetWidth - (10 - gap)}px`;
+    } else {
+        programNow.style.maxWidth = "";
+    }
+}
+
+// Collapse after 5s, shrink from Left inward, keep logo+clock fixed
+setTimeout(() => {
+    document.getElementById("info-bar").classList.add("collapsed");
+}, 5000);
+
+// Re-adjust on Resize
+window.addEventListener('resize', adjustProgramNameEllipsis);
+
+// Fullscreen on Load
+document.addEventListener("DOMContentLoaded", () => {
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+    }
+});
+</script>
+</body>
+</html>
