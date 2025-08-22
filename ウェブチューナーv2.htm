@@ -1,190 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/ico" sizes="48x48" href="https://www.nhk.jp/favicon.ico">
-<title>ウェブチューナー</title>
+<meta charset="UTF-8">　<meta name="viewport" content="width=device-width, initial-scale=1.0">　<link rel="icon" type="image/ico" sizes="48x48" href="https://www.nhk.jp/favicon.ico">　<title>ウェブチューナー</title>
 <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/video.js@latest/dist/video.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/video.js@latest/dist/video.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
 <style>
-html, body {
-    margin: 0;
-    padding: 0;
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-}
-
-#video-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: black;
-}
-
-.video-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-}
-
-/* Info Bar */
-#info-bar {
-    position: absolute;
-    top: 40px;
-    left: 300px;
-    right: 50px;
-    background: rgba(0, 0, 0, 1);
-    padding: 5px 5px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
-    transition: width 0s, left 0s;
-}
-
-#program-now {
-    font-size: 17px;
-    flex-grow: 1;
-    padding-left: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-width: 0;
-}
-
-#logo-clock-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex-shrink: 0;
-}
-
-#channel-logo {
-    max-height: 27px;
-    width: auto;
-    object-fit: contain;
-}
-
-#clock {
-    font-size: 13px;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-/* Collapsed Mode */
-.collapsed {
-    left: auto !important;
-    width: auto !important;
-    right: 50px !important;
-}
-
-.collapsed #program-now {
-    display: none;
-}
-
-/* Channel List */
-#channel-list {
-    position: absolute;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100vh;
-    background: rgba(0, 0, 0, 1);
-    overflow-y: auto;
-    transition: right 0.3s;
-    z-index: 15;
-}
-
-#channel-list.show {
-    right: 0;
-}
-
-.channel-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
-}
-
-.channel-number {
-    width: 30px;
-    text-align: center;
-    font-weight: bold;
-    flex-shrink: 0;
-}
-
-.channel-item img {
-    max-height: 27px;
-    width: auto;
-    object-fit: contain;
-}
-
-.channel-epg {
-    flex-grow: 1;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 300px;
-    word-break: break-word;
-    line-height: 1.4;
-}
-
-/* Channel Input OSD */
-#channel-input-display {
-    position: absolute;
-    top: 80px;
-    right: 50px;
-    background: rgba(0, 0, 0, 1);
-    color: white;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: none;
-    z-index: 20;
-}
+html, body { margin: 0; padding: 0; background: black; color: white; font-family: Arial, sans-serif; overflow: hidden;}
+#video-container { position: relative; width: 100vw; height: 100vh; background: black;}
+.video-js { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; object-fit: cover;}
+#info-bar { position: absolute; top: 40px; left: 300px; right: 50px; background: rgba(0, 0, 0, 1); padding: 5px 5px; border-radius: 5px; display: flex; align-items: center; justify-content: space-between; z-index: 10; transition: width 0s, left 0s;}
+#program-now { font-size: 17px; flex-grow: 1; padding-left: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;}
+#logo-clock-container { display: flex; align-items: center; gap: 5px; flex-shrink: 0;}
+#channel-logo { max-height: 27px; width: auto; object-fit: contain;}
+#clock { font-size: 13px; font-weight: bold; margin-left: 10px;}
+.collapsed { left: auto !important; width: auto !important; right: 50px !important;}
+.collapsed #program-now { display: none;}
+#channel-list { position: absolute; top: 0; right: -250px; width: 250px; height: 100vh; background: rgba(0, 0, 0, 1); overflow-y: auto; transition: right 0.3s; z-index: 15;}
+#channel-list.show { right: 0;}
+.channel-item { display: flex; align-items: center; gap: 10px; padding: 8px; border-bottom: 1px solid #ccc;}
+.channel-number { width: 30px; text-align: center; font-weight: bold; flex-shrink: 0;}
+.channel-item img { max-height: 27px; width: auto; object-fit: contain;}
+.channel-epg { flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; max-width: 300px; word-break: break-word; line-height: 1.4;}
+#channel-input-display { position: absolute; top: 80px; right: 50px; background: rgba(0, 0, 0, 1); color: white; font-size: 20px; padding: 5px 10px; border-radius: 5px; display: none; z-index: 20;}
 </style>
 </head>
 <body>
-
 <div id="video-container">
     <video id="video" class="video-js vjs-default-skin" controls autoplay preload="auto" playsinline></video>
-
     <div id="channel-list"></div>
-
     <div id="info-bar">
-        <div id="program-now">プログラム情報なし</div>
+        <div id="program-now">番組情報なし</div>
         <div id="logo-clock-container">
             <img id="channel-logo" src="" alt="Logo">
             <div id="clock">--:--</div>
         </div>
     </div>
-
     <div id="channel-input-display">- - -</div>
 </div>
-
 <script>
-let channels = [];
-let currentChannelIndex = 0;
-let epgData = null;
-let currentTvgId = null;
-let channelInput = "";
-let inputTimeout;
-let collapseTimer;
-
+let channels = [];　let currentChannelIndex = 0;　let epgData = null;　let currentTvgId = null;　let channelInput = "";　let inputTimeout;　let collapseTimer;
 const m3uUrl = new URLSearchParams(window.location.search).get("m3u");
 if (m3uUrl) fetchM3UPlaylist(m3uUrl);
-
 function fetchM3UPlaylist(url) {
     fetch(url).then(r => r.text()).then(data => {
         const urlTvgMatch = data.match(/#EXTM3U.*?url-tvg="(.*?)"/);
@@ -194,17 +50,15 @@ function fetchM3UPlaylist(url) {
         if (channels.length > 0) playChannel(0);
     });
 }
-
 function fetchMultipleEPGs(urls) {
     Promise.all(urls.map(url => fetch(url).then(r => r.text()).then(xml => new DOMParser().parseFromString(xml, "text/xml"))))
         .then(docs => {
             epgData = mergeEPGs(docs);
             console.log("EPG Loaded.");
             updateProgramInfo();
-            updateChannelListEPG();  // <-- Update EPG in channel list after load
+            updateChannelListEPG();
         });
 }
-
 function mergeEPGs(docs) {
     if (docs.length === 0) return null;
     const merged = docs[0];
@@ -214,7 +68,6 @@ function mergeEPGs(docs) {
     });
     return merged;
 }
-
 function parseM3U(data) {
     const lines = data.split("\n");
     const result = [];
@@ -234,7 +87,6 @@ function parseM3U(data) {
     });
     return result;
 }
-
 function displayChannelList() {
     const list = document.getElementById("channel-list");
     list.innerHTML = "";
@@ -249,18 +101,15 @@ function displayChannelList() {
         list.appendChild(item);
     });
 }
-
 document.getElementById("channel-logo").addEventListener('load', () => {
     document.getElementById("program-now").style.minWidth = '0px';
 });
-
 function playChannel(index) {
     if (index < 0 || index >= channels.length) return;
     currentChannelIndex = index;
     const ch = channels[index];
     const videoEl = document.getElementById('video');
     const player = videojs(videoEl);
-
     if (Hls.isSupported()) {
         const hls = new Hls();
         hls.loadSource(ch.url);
@@ -269,18 +118,16 @@ function playChannel(index) {
         player.src({ src: ch.url, type: 'application/vnd.apple.mpegurl' });
     }
     player.play();
-
     currentTvgId = ch.id;
     document.getElementById("channel-logo").src = ch.logo;
-    document.getElementById("program-now").innerText = "プログラム情報なし";
+    document.getElementById("program-now").innerText = "番組情報なし";
     updateProgramInfo();
     expandInfoBar();
 }
-
 function updateProgramInfo() {
     if (!epgData || !currentTvgId) return;
     const now = new Date();
-    let nowPlaying = "プログラム情報なし";
+    let nowPlaying = "番組情報なし";
     const programs = Array.from(epgData.querySelectorAll(`programme[channel="${currentTvgId}"]`));
     for (let i = 0; i < programs.length; i++) {
         const prog = programs[i];
@@ -293,13 +140,12 @@ function updateProgramInfo() {
     }
     document.getElementById("program-now").innerText = nowPlaying;
 }
-
 function updateChannelListEPG() {
     if (!epgData) return;
     const now = new Date();
     channels.forEach((ch, idx) => {
         const programs = Array.from(epgData.querySelectorAll(`programme[channel="${ch.id}"]`));
-        let nowPlaying = "プログラム情報なし";
+        let nowPlaying = "番組情報なし";
         for (let i = 0; i < programs.length; i++) {
             const prog = programs[i];
             const start = parseEPGTime(prog.getAttribute("start"));
@@ -313,7 +159,6 @@ function updateChannelListEPG() {
         if (epgDiv) epgDiv.innerText = nowPlaying;
     });
 }
-
 function parseEPGTime(str) {
     const dt = str.slice(0, 14);
     const tz = str.slice(-5);
@@ -321,19 +166,16 @@ function parseEPGTime(str) {
     const offset = (parseInt(tz.slice(1,3))*60 + parseInt(tz.slice(3,5))) * 60000;
     return new Date(utcDate.getTime() - (tz[0] === "+" ? offset : -offset));
 }
-
 function expandInfoBar() {
     const infoBar = document.getElementById("info-bar");
     infoBar.classList.remove("collapsed");
     clearTimeout(collapseTimer);
     collapseTimer = setTimeout(() => collapseInfoBar(), 5000);
 }
-
 function collapseInfoBar() {
     const infoBar = document.getElementById("info-bar");
     infoBar.classList.add("collapsed");
 }
-
 function updateClock() {
     const now = new Date();
     let h = now.getHours();
@@ -344,13 +186,11 @@ function updateClock() {
 }
 setInterval(updateClock, 10000);
 updateClock();
-
 document.addEventListener("keydown", e => {
     const k = e.keyCode || e.which;
     if (k === 427) playChannel(currentChannelIndex - 1);
     else if (k === 428) playChannel(currentChannelIndex + 1);
 });
-
 document.addEventListener("keydown", (event) => {
     const key = event.key;
     if (key >= "0" && key <= "9") {
@@ -360,7 +200,6 @@ document.addEventListener("keydown", (event) => {
         inputTimeout = setTimeout(() => selectChannel(), 500);
     }
 });
-
 function updateChannelInputDisplay() {
     const display = document.getElementById("channel-input-display");
     if (channelInput.length > 0) {
@@ -368,7 +207,6 @@ function updateChannelInputDisplay() {
         display.style.display = "block";
     }
 }
-
 function selectChannel() {
     const index = parseInt(channelInput, 10) - 1;
     if (index >= 0 && index < channels.length) playChannel(index);
@@ -376,7 +214,6 @@ function selectChannel() {
     document.getElementById("channel-input-display").innerText = "- - -";
     document.getElementById("channel-input-display").style.display = "none";
 }
-
 document.addEventListener("mousemove", (event) => {
     const screenWidth = window.innerWidth;
     const cursor = event.clientX;
@@ -388,6 +225,5 @@ document.addEventListener("mousemove", (event) => {
     }
 });
 </script>
-
 </body>
 </html>
