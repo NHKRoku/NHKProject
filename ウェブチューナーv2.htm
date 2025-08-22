@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">　<meta name="viewport" content="width=device-width, initial-scale=1.0">　<link rel="icon" type="image/ico" sizes="48x48" href="https://www.nhk.jp/favicon.ico">　<title>ウェブチューナー</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/ico" sizes="48x48" href="https://www.nhk.jp/favicon.ico"><title>ウェブチューナー</title>
 <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/video.js@latest/dist/video.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/video.js@latest/dist/video.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
 <style>
-html, body { margin: 0; padding: 0; background: black; color: white; font-family: Arial, sans-serif; overflow: hidden;}
-#video-container { position: relative; width: 100vw; height: 100vh; background: black;}
-.video-js { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; object-fit: cover;}
-#info-bar { position: absolute; top: 40px; left: 300px; right: 50px; background: rgba(0, 0, 0, 1); padding: 5px 5px; border-radius: 5px; display: flex; align-items: center; justify-content: space-between; z-index: 10; transition: width 0s, left 0s;}
-#program-now { font-size: 17px; flex-grow: 1; padding-left: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;}
-#logo-clock-container { display: flex; align-items: center; gap: 5px; flex-shrink: 0;}
-#channel-logo { max-height: 27px; width: auto; object-fit: contain;}
-#clock { font-size: 13px; font-weight: bold; margin-left: 10px;}
-.collapsed { left: auto !important; width: auto !important; right: 50px !important;}
+html, body { margin: 0; padding: 0; background: black; color: white; font-family: Arial, sans-serif; overflow: hidden; }
+#video-container { position: relative; width: 100vw; height: 100vh; background: black; }
+.video-js { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; object-fit: cover; }
+#info-bar { position: absolute; top: 40px; left: 300px; right: 50px; background: rgba(0, 0, 0, 1); padding: 5px 5px; border-radius: 5px; display: flex; align-items: center; justify-content: space-between; z-index: 10; transition: width 0s, left 0s; }
+#program-now { font-size: 17px; flex-grow: 1; padding-left: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+#logo-clock-container { display: flex; align-items: center; gap: 5px; flex-shrink: 0; }
+#channel-logo { max-height: 27px; width: auto; object-fit: contain; }
+#clock { font-size: 13px; font-weight: bold; margin-left: 10px; }
+.collapsed { left: auto !important; width: auto !important; right: 50px !important; }
 .collapsed #program-now { display: none;}
-#channel-list { position: absolute; top: 0; right: -250px; width: 250px; height: 100vh; background: rgba(0, 0, 0, 1); overflow-y: auto; transition: right 0.3s; z-index: 15;}
-#channel-list.show { right: 0;}
-.channel-item { display: flex; align-items: center; gap: 10px; padding: 8px; border-bottom: 1px solid #ccc;}
-.channel-number { width: 30px; text-align: center; font-weight: bold; flex-shrink: 0;}
-.channel-item img { max-height: 27px; width: auto; object-fit: contain;}
-.channel-epg { flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; max-width: 300px; word-break: break-word; line-height: 1.4;}
-#channel-input-display { position: absolute; top: 80px; right: 50px; background: rgba(0, 0, 0, 1); color: white; font-size: 20px; padding: 5px 10px; border-radius: 5px; display: none; z-index: 20;}
+#channel-list { position: absolute; top: 0; right: -250px; width: 250px; height: 100vh; background: rgba(0, 0, 0, 1); overflow-y: auto; transition: right 0.3s; z-index: 15; }
+#channel-list.show { right: 0; }
+.channel-item { display: flex; align-items: center; gap: 10px; padding: 8px; border-bottom: 1px solid #ccc; }
+.channel-number { width: 30px; text-align: center; font-weight: bold; flex-shrink: 0; }
+.channel-item img { max-height: 27px; width: auto; object-fit: contain; }
+.channel-epg { flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; max-width: 300px; word-break: break-word; line-height: 1.4; }
+#channel-input-display { position: absolute; top: 80px; right: 50px; background: rgba(0, 0, 0, 1); color: white; font-size: 20px; padding: 5px 10px; border-radius: 5px; display: none; z-index: 20; }
 </style>
 </head>
 <body>
@@ -227,3 +227,4 @@ document.addEventListener("mousemove", (event) => {
 </script>
 </body>
 </html>
+
