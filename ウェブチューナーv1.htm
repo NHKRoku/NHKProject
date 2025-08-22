@@ -1,144 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/ico" sizes="48x48" href="https://www.nhk.jp/favicon.ico">
-   <title>ウェブチューナー</title>
-   <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet">
-   <script src="https://cdn.jsdelivr.net/npm/video.js@latest/dist/video.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
-    <style>
-        /* Fullscreen Mode */
-        html, body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-        #video-container {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            background: black;
-        }
-.video-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover; /* Optional: ensures it fills the screen nicely */
-}
-        /* Info Bar */
-#info-bar {
-    position: absolute;
-    top: 42px;
-    left: 73px;
-    right: 73px;
-    background: rgba(0, 0, 100, 0.9);
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10; /* Lower than #channel-list so it stays underneath */
-}
-    #program-info {
-        font-size: 15px;
-        flex-grow: 1;
-        padding-left: 10px;
-    }
-    #program-now {
-        font-weight: bold;
-    }
-    #program-next {
-        font-size: 13px;
-        color: lightgray;
-    }
-
-    /* Adjust logo size dynamically */
-
-#channel-logo {
-max-height: 30px; /* Set a fixed height /
-width: auto; / Maintain aspect ratio /
-object-fit: contain; / Prevent distortion */
-}
-
-/* Clock inside Info Bar */
-    #clock {
-        font-size: 13px;
-        font-weight: bold;
-        margin-left: 10px;
-    }
-
-    /* Channel List */
-#channel-list {
-    position: absolute;
-    top: 0;
-    right: -250px; /* Initially hidden */
-    width: 250px;
-    height: 100vh;
-    background: rgba(0, 0, 100, 0.95);
-    overflow-y: auto;
-    transition: right 0.3s;
-    z-index: 15; /* Ensures it appears above the info bar */
-}
-
-#channel-list.show {
-    right: 0; /* Slide in */
-}
-.channel-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
-}
-
-.channel-number {
-    width: 30px;
-    text-align: center;
-    font-weight: bold;
-    flex-shrink: 0;
-}
-
-.channel-item img {
-max-height: 40px; /* Set a fixed height /
-width: auto; / Maintain aspect ratio /
-object-fit: contain; / Prevent distortion */
-}
-
-.channel-epg {
-    flex-grow: 1;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;  /* Limit to 3 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 300px;  /* Adjust as needed */
-    word-break: break-word; /* Allow breaking words if needed */
-    line-height: 1.4; /* Adjust for better readability */
-}
+<meta charset="UTF-8">　<meta name="viewport" content="width=device-width, initial-scale=1.0">　<link rel="icon" type="image/ico" sizes="48x48" href="https://www.nhk.jp/favicon.ico">　<title>ウェブチューナー</title>
+<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/video.js@latest/dist/video.min.js"></script>　<script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
+<style>
+html, body {　margin: 0;　padding: 0;　background-color: black;　color: white;　font-family: Arial, sans-serif;　overflow: hidden;　}
+#video-container {　position: relative;　width: 100vw;　height: 100vh;　background: black;　}
+.video-js {　position: absolute;　top: 0;　left: 0;　width: 100% !important;　height: 100% !important;　object-fit: cover;}
+#info-bar {　position: absolute;　top: 42px;　left: 73px;　right: 73px;　background: rgba(0, 0, 100, 0.9);　padding: 5px 10px;　border-radius: 5px;　display: flex;　align-items: center;　justify-content: space-between;　z-index: 10;　}
+#program-info { font-size: 15px; flex-grow: 1; padding-left: 10px;}
+#program-now { font-weight: bold;}
+#program-next { font-size: 13px; color: lightgray;}
+#channel-logo { max-height: 30px; width: auto; object-fit: contain;}
+#clock { font-size: 13px; font-weight: bold; margin-left: 10px;}
+#channel-list { position: absolute; top: 0; right: -250px; width: 250px; height: 100vh; background: rgba(0, 0, 100, 0.95); overflow-y: auto; transition: right 0.3s; z-index: 15;}
+#channel-list.show { right: 0;}
+.channel-item { display: flex; align-items: center; gap: 10px; padding: 8px; border-bottom: 1px solid #ccc;}
+.channel-number { width: 30px; text-align: center; font-weight: bold; flex-shrink: 0;}
+.channel-item img { max-height: 40px; width: auto; object-fit: contain;}
+.channel-epg { flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; max-width: 300px; word-break: break-word; line-height: 1.4;}
 </style>
 </head>
 <body>
     <div id="video-container">
-<video
-  id="video"
-  class="video-js vjs-default-skin"
-  controls
-  autoplay
-  preload="auto"
-  playsinline>
+<video id="video" class="video-js vjs-default-skin" controls autoplay preload="auto" playsinline>
 </video>
-
-    <!-- Channel List -->
     <div id="channel-list"></div>
-
-    <!-- Info Bar -->
     <div id="info-bar">
         <div id="program-info">
             <div id="program-now"></div>
@@ -148,24 +36,20 @@ object-fit: contain; / Prevent distortion */
         <div id="clock">--:--</div>
     </div>
 </div>
-
 <script>
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
-
 const m3uUrl = getQueryParam("m3u");
 let channels = [];
 let currentChannelIndex = 0;
-let epgData = null;  // Store merged EPG data
+let epgData = null;
 let currentTvgId = null;
 let epgUpdateInterval;
-
 if (m3uUrl) {
     fetchM3UPlaylist(m3uUrl);
 }
-
 function fetchM3UPlaylist(url) {
     fetch(url)
         .then(response => response.text())
@@ -175,7 +59,6 @@ function fetchM3UPlaylist(url) {
                 const xmltvUrls = urlTvgMatch[1].split(",").map(url => url.trim());
                 fetchMultipleEPGs(xmltvUrls);
             }
-
             channels = parseM3U(data);
             displayChannelList();
             if (channels.length > 0) {
@@ -184,8 +67,6 @@ function fetchM3UPlaylist(url) {
         })
         .catch(error => console.error("Error loading M3U:", error));
 }
-
-// Fetch and merge multiple EPGs
 function fetchMultipleEPGs(xmltvUrls) {
     const fetchPromises = xmltvUrls.map(url =>
         fetch(url)
@@ -196,40 +77,31 @@ function fetchMultipleEPGs(xmltvUrls) {
                 return null;
             })
     );
-
     Promise.all(fetchPromises).then(epgDocs => {
-        epgData = mergeEPGs(epgDocs.filter(doc => doc));  // Remove null values
+        epgData = mergeEPGs(epgDocs.filter(doc => doc));
         console.log("EPG data loaded and merged.");
     });
 }
-
-// Merge multiple XMLTV documents
 function mergeEPGs(epgDocs) {
     if (epgDocs.length === 0) return null;
 
-    const mergedDoc = epgDocs[0];  // Start with the first document
+    const mergedDoc = epgDocs[0];
     const mergedRoot = mergedDoc.documentElement;
-
     for (let i = 1; i < epgDocs.length; i++) {
         const currentDoc = epgDocs[i];
         const programmes = currentDoc.querySelectorAll("programme");
         programmes.forEach(programme => mergedRoot.appendChild(programme.cloneNode(true)));
     }
-
     return mergedDoc;
 }
-
 function parseM3U(data) {
     const lines = data.split("\n");
     const parsedChannels = [];
     let currentChannel = null;
-
     lines.forEach(line => {
         line = line.trim();
-
         if (line.startsWith("#EXTINF")) {
             const match = line.match(/tvg-id="(.*?)".*?tvg-logo="(.*?)".*?,(.*)/);
-
             if (match) {
                 currentChannel = {
                     id: match[1] || "",
@@ -244,15 +116,12 @@ function parseM3U(data) {
             currentChannel = null;
         }
     });
-
     return parsedChannels;
 }
   function selectChannel() {
-    const enteredNumber = channelInput; // Keep input as string
-
+    const enteredNumber = channelInput;
     if (enteredNumber.length > 0) {
         const channelIndex = channels.findIndex(ch => ch.number === enteredNumber);
-
         if (channelIndex !== -1) {
             playChannel(channelIndex);
             channelInput = "";
@@ -264,47 +133,36 @@ function parseM3U(data) {
 function displayChannelList() {
     const channelList = document.getElementById("channel-list");
     channelList.innerHTML = "";
-
     channels.forEach((channel, index) => {
         const item = document.createElement("div");
         item.className = "channel-item";
         item.dataset.index = index;
-
-        // Create elements for channel details
         const channelNumber = document.createElement("div");
         channelNumber.className = "channel-number";
         channelNumber.innerText = channel.number || index + 1;
-
         const channelLogo = document.createElement("img");
         channelLogo.src = channel.logo;
         channelLogo.alt = channel.name;
-
         const epgContainer = document.createElement("div");
         epgContainer.className = "channel-epg";
-        epgContainer.innerText = "EPGを読み込んでいます...";  // Set a placeholder initially
-
+        epgContainer.innerText = "EPGを読み込んでいます...";
         item.appendChild(channelNumber);
         item.appendChild(channelLogo);
         item.appendChild(epgContainer);
-
         item.addEventListener("click", () => playChannel(index));
         channelList.appendChild(item);
     });
-
-    // **Auto-update EPG for all channels once epgData is ready**
     if (epgData) {
         updateEPGForAllChannels();
     } else {
         const epgCheckInterval = setInterval(() => {
             if (epgData) {
                 updateEPGForAllChannels();
-                clearInterval(epgCheckInterval);  // Stop checking once EPG is available
+                clearInterval(epgCheckInterval);
             }
         }, 500);
     }
 }
-
-// **New Function: Updates EPG for All Channels**
 function updateEPGForAllChannels() {
     document.querySelectorAll(".channel-item").forEach((item, index) => {
         const channel = channels[index];
@@ -312,98 +170,73 @@ function updateEPGForAllChannels() {
         epgContainer.innerText = getEPGForChannel(channel.id);
     });
 }
-
 let currentPlayer = null;
 let currentHls = null;
-
 function playChannel(index) {
     if (index < 0 || index >= channels.length) return;
-
     currentChannelIndex = index;
     const channel = channels[index];
-
     const videoElement = document.getElementById('video');
-
     if (!currentPlayer) {
-        // First-time initialization of Video.js
         currentPlayer = videojs(videoElement, {
             autoplay: true,
             controls: true,
             preload: 'auto'
         });
     } else {
-        // If already playing, pause before switching
         currentPlayer.pause();
         currentPlayer.reset();
     }
-
-    // Clean up any existing Hls instance
     if (currentHls) {
         currentHls.destroy();
         currentHls = null;
     }
-
-    // HLS supported via Hls.js
     if (Hls.isSupported()) {
         currentHls = new Hls();
         currentHls.loadSource(channel.url);
         currentHls.attachMedia(currentPlayer.tech().el());
     } else {
-        // Native HLS fallback (Safari, etc.)
         currentPlayer.src({ src: channel.url, type: 'application/vnd.apple.mpegurl' });
     }
-
-    // Update channel info
     document.getElementById("channel-logo").src = channel.logo;
     currentTvgId = channel.id;
     updateProgramInfo();
     displayChannelList();
-
     if (epgUpdateInterval) {
         clearInterval(epgUpdateInterval);
     }
     epgUpdateInterval = setInterval(updateProgramInfo, 15000);
 }
-
 function updateProgramInfo() {
     if (!epgData || !currentTvgId) return;
-
     const currentTime = new Date();
     let nowPlaying = "プログラム情報なし";
     let nextProgram = "--";
-
     const programs = Array.from(epgData.querySelectorAll(`programme[channel="${currentTvgId}"]`));
-
     for (let i = 0; i < programs.length; i++) {
         const program = programs[i];
         const start = parseEPGTime(program.getAttribute("start"));
         const stop = parseEPGTime(program.getAttribute("stop"));
-
         if (currentTime >= start && currentTime <= stop) {
             nowPlaying = program.querySelector("title")?.textContent || "No Data";
             nextProgram = programs[i + 1]?.querySelector("title")?.textContent || "--";
             break;
         }
     }
-
     document.getElementById("program-now").innerText = nowPlaying;
     document.getElementById("program-next").innerText = "次 : " + nextProgram;
 }
 function getEPGForChannel(tvgId) {
     if (!epgData) return "EPGを読み込んでいます";
     if (!tvgId) return "EPGなし";
-
     const currentTime = new Date();
     let nowPlaying = null;
     let nextProgram = null;
-
     const programs = Array.from(epgData.querySelectorAll(`programme[channel="${tvgId}"]`));
-
     for (let i = 0; i < programs.length; i++) {
         const program = programs[i];
         const start = parseEPGTime(program.getAttribute("start"));
         const stop = parseEPGTime(program.getAttribute("stop"));
-
         if (currentTime >= start && currentTime <= stop) {
             nowPlaying = program.querySelector("title")?.textContent || "No Data";
             nextProgram = programs[i + 1]?.querySelector("title")?.textContent || "--";
@@ -413,10 +246,8 @@ function getEPGForChannel(tvgId) {
             nextProgram = program.querySelector("title")?.textContent || "--";
         }
     }
-
     return nowPlaying !== null ? nowPlaying : "EPGなし";
 }
-
 function parseEPGTime(epgTime) {
     try {
         const dateTimeStr = epgTime.slice(0, 14);
@@ -425,37 +256,30 @@ function parseEPGTime(epgTime) {
         const utcDate = new Date(
             dateTimeStr.replace(/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/, "$1-$2-$3T$4:$5:$6Z")
         );
-
         const tzSign = tzOffsetStr[0] === "+" ? 1 : -1;
         const tzHours = parseInt(tzOffsetStr.slice(1, 3), 10);
         const tzMinutes = parseInt(tzOffsetStr.slice(3, 5), 10);
         const offsetInMs = tzSign * (tzHours * 60 + tzMinutes) * 60000;
-
         return new Date(utcDate.getTime() - offsetInMs);
     } catch (error) {
         console.error("Error parsing EPG time:", epgTime);
         return new Date();
     }
 }
-
 function updateClock() {
     const now = new Date();
     let hours = now.getHours();
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const period = hours < 12 ? "午前" : "午後";
-
     if (hours === 12) {
         hours = 0;
     } else if (hours > 12) {
         hours -= 12;
     }
-
     document.getElementById("clock").innerText = `${hours}:${minutes} ${period}`;
 }
-
 setInterval(updateClock, 1000);
 updateClock();
-
 document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowUp" || event.key === "ChannelUp") {
         playChannel(currentChannelIndex - 1);
@@ -463,22 +287,16 @@ document.addEventListener("keydown", (event) => {
         playChannel(currentChannelIndex + 1);
     }
 });
-
-// Add event listeners for CH⁺ and CH⁻ keys (common TV remote key codes)
 document.addEventListener("keydown", (event) => {
     const keyCode = event.keyCode || event.which;
-
-    if (keyCode === 427) { // CH⁺ button (common key code)
+    if (keyCode === 427) {
         playChannel(currentChannelIndex - 1);
-    } else if (keyCode === 428) { // CH⁻ button (common key code)
+    } else if (keyCode === 428) {
         playChannel(currentChannelIndex +1);
     }
 });
-
-let channelInput = ""; // Store user input for multi-digit channels
-let inputTimeout; // Timer to reset input after delay
-
-// Create a small on-screen display for channel input
+let channelInput = "";
+let inputTimeout;
 const channelInputDisplay = document.createElement("div");
 channelInputDisplay.id = "channel-input-display";
 channelInputDisplay.style.position = "absolute";
@@ -489,53 +307,43 @@ channelInputDisplay.style.color = "white";
 channelInputDisplay.style.fontSize = "20px";
 channelInputDisplay.style.padding = "5px 10px";
 channelInputDisplay.style.borderRadius = "5px";
-channelInputDisplay.style.display = "none"; // Hidden initially
-channelInputDisplay.style.zIndex = "10"; // Ensure visibility
-channelInputDisplay.innerText = "- - -"; // Default display
+channelInputDisplay.style.display = "none";
+channelInputDisplay.style.zIndex = "10";
+channelInputDisplay.innerText = "- - -";
 document.body.appendChild(channelInputDisplay);
-
 document.addEventListener("keydown", (event) => {
     const key = event.key;
-
     if (key >= "0" && key <= "9") {
         if (channelInput.length < 3) {
-            channelInput += key; // Append the pressed key to the input
+            channelInput += key;
         }
-
-        updateChannelInputDisplay(); // Show the entered number
-        clearTimeout(inputTimeout); // Reset the timeout
-
+        updateChannelInputDisplay();
+        clearTimeout(inputTimeout);
         inputTimeout = setTimeout(() => {
             selectChannel();
-        }, 500); // Wait for 0.5 seconds before selecting the channel
+        }, 500);
     }
 });
-
 function updateChannelInputDisplay() {
     if (channelInput.length > 0) {
         let displayText = channelInput.padEnd(3, "-").split("").join(" ");
         channelInputDisplay.innerText = displayText;
-        channelInputDisplay.style.display = "block"; // Show when a number is entered
+        channelInputDisplay.style.display = "block";
     }
 }
-
 function selectChannel() {
-    const channelIndex = parseInt(channelInput, 10) - 1; // Convert input to index (1-based to 0-based)
-
+    const channelIndex = parseInt(channelInput, 10) - 1;
     if (channelIndex >= 0 && channelIndex < channels.length) {
         playChannel(channelIndex);
     }
-
-    channelInput = ""; // Reset input after selection
-    channelInputDisplay.innerText = "- - -"; // Reset to default
-    channelInputDisplay.style.display = "none"; // Hide OSD after switching
+    channelInput = "";
+    channelInputDisplay.innerText = "- - -";
+    channelInputDisplay.style.display = "none";
 }
 const channelList = document.getElementById("channel-list");
-
 document.addEventListener("mousemove", (event) => {
     const screenWidth = window.innerWidth;
     const cursorPosition = event.clientX;
-
     if (cursorPosition > screenWidth - 50) {
         channelList.classList.add("show");
     } else if (!channelList.matches(":hover")) {
