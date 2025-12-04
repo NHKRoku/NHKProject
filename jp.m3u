@@ -1,0 +1,133 @@
+#EXTM3U url-tvg="https://animenosekai.github.io/japanterebi-xmltv/guide.xml" tvg-shift=0 m3uautoload=1
+#EXTINF:-1 group-title="Tokyo" tvg-id="JOAKDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE0-011-400x400.png",NHK G
+https://nl.utako.moe/NHK_G/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Tokyo" tvg-id="JOABDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE1-021-400x400.png",NHK E
+https://nl.utako.moe/NHK_E/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Tokyo" tvg-id="JOAXDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE2-041-400x400.png",NTV
+https://nl.utako.moe/Nippon_TV/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Tokyo" tvg-id="JORXDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE3-061-400x400.png",TBS
+https://nl.utako.moe/TBS/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Tokyo" tvg-id="JOCXDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE4-081-400x400.png",Fuji TV
+https://nl.utako.moe/Fuji_TV/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Tokyo" tvg-id="JOEXDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE5-051-400x400.png",TV Asahi
+https://nl.utako.moe/TV_Asahi/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Tokyo" tvg-id="JOTXDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE6-071-400x400.png",TV Tokyo
+https://nl.utako.moe/TV_Tokyo/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Tokyo" tvg-id="TokyoMX1.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E87-091-400x400.png",TOKYO MX1
+https://nl.utako.moe/Tokyo_MX1/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Kansai" tvg-id="JOOYDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD2-041-400x400.png",MBS
+https://nl.utako.moe/mbs/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Kansai" tvg-id="JOAYDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD3-061-400x400.png",ABC
+https://nl.utako.moe/abc/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Kansai" tvg-id="JOBHDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D76-071-400x400.png",TV Osaka
+https://nl.utako.moe/tvo/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Kansai" tvg-id="JODXDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD4-081-400x400.png",Kansai TV
+https://nl.utako.moe/kansaitv/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Kansai" tvg-id="JOIXDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD5-101-400x400.png",YTV
+https://nl.utako.moe/ytv/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Kansai" tvg-id="JOBRDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D66-051-400x400.png",KBS
+https://nl.utako.moe/kbs/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Kansai" tvg-id="JOUHDTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D56-031-400x400.png",SUN
+https://nl.utako.moe/suntv/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="NHKBS.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-101-400x400.png",NHK BS
+https://nl.utako.moe/NHK_BS/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="BSNipponTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-141-400x400.png",BS NTV
+https://nl.utako.moe/bsntv/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="BSAsahi.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-151-400x400.png",BS Asahi
+https://nl.utako.moe/bsasahi/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="BSTBS.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-161-400x400.png",BS TBS
+https://nl.utako.moe/bstbs/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="BSTVTokyo.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-171-400x400.png",BS TV Tokyo
+https://nl.utako.moe/bstvtokyo/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="BSFuji.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-181-400x400.png",BS Fuji
+https://nl.utako.moe/bsfuji/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="BS11.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-211-400x400.png",BS11
+https://nl.utako.moe/BS11/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="NHKBSP4K.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-000b-101-400x400.png",NHK BSPremium 4K
+https://nl.utako.moe/bsp4k/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="WOWOWPrime.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-191-400x400.png",WOWOW Prime
+https://nl.utako.moe/wprime/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="WOWOWCinema.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-193-400x400.png",WOWOW Cinema
+https://nl.utako.moe/wcinema/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="WOWOWLive.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-192-400x400.png",WOWOW Live
+https://nl.utako.moe/wlive/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="StarBS10.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-0004-200-400x400.png",BS10 Premium
+https://nl.utako.moe/bs10_star/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="JSPORTS1.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-168-400x400.png",JSport 1
+https://nl.utako.moe/js1/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="JSPORTS2.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-169-400x400.png",JSport 2
+https://nl.utako.moe/js2/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="JSPORTS3.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-158-400x400.png",JSport 3
+https://nl.utako.moe/js3/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="JSPORTS4.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-132-400x400.png",JSport 4
+https://nl.utako.moe/js4/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="GreenChannel.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-164-400x400.png",Green Channel
+https://nl.utako.moe/green/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="AnimaxAsia.sg@Japan" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-149-400x400.png",Animax
+https://nl.utako.moe/Animax/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="NihonEigaSenmonChannel.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-125-400x400.png",Nihon Eiga Senmon
+https://nl.utako.moe/nihoneiga/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="BS" tvg-id="SkyA.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-147-400x400.png",Sky A
+https://nl.utako.moe/skya/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="GAORASPORTS.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-146-400x400.png",Gaora Sports
+https://nl.utako.moe/gaora/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="ATX.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-182-400x400.png",AT-X
+https://nl.utako.moe/AT-X/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="SpaceShowerTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-156-400x400.png",Space Shower TV
+https://nl.utako.moe/spaceshower/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="MTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-150-400x400.png",MTV
+https://nl.utako.moe/mtv/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="KayoPops.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-175-400x400.png",Kayo Pops
+https://nl.utako.moe/kayopops/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="KidsStation.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-163-400x400.png", Kids Staton
+https://nl.utako.moe/kids_station/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="DisneyChannel.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-183-400x400.png",Disney Channel
+https://nl.utako.moe/disneychan/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="CartoonNetwork.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-171-400x400.png",Cartoon Network
+https://nl.utako.moe/cartoon_network/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="NitteleGPlus.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-166-400x400.png",Nittele G+
+https://nl.utako.moe/ntvgplus/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="FamilyGekijyo.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-157-400x400.png",Family Gekijyo
+https://nl.utako.moe/familygeki/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="MONDOTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-160-400x400.png",Mondo TV
+https://nl.utako.moe/mondo/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="MUSICONTV.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-162-400x400.png",Music ON TV
+https://nl.utako.moe/musicon/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="MnetJapan.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-181-400x400.png",Mnet
+https://nl.utako.moe/mnet/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="TBSChannel1.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-144-400x400.png",TBS Channel 1
+https://nl.utako.moe/tbsch1/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="TBSChannel2.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-176-400x400.png",TBS Channel 2
+https://nl.utako.moe/tbsch2/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="TVAsahiChannel1.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-136-400x400.png",TV Asahi Channel 1
+https://nl.utako.moe/ex_ch1/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="TVAsahiChannel2.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-188-400x400.png",TV Asahi Channel 2
+https://nl.utako.moe/ex_ch2/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="FujiTVONE.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-138-400x400.png",Fuji TV ONE
+https://nl.utako.moe/fuji_one/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="FujiTVTWO.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-139-400x400.png",Fuji TV TWO
+https://nl.utako.moe/fuji_two/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="FujiTVNEXT.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-137-400x400.png",Fuji TV NEXT
+https://nl.utako.moe/fuji_next/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="ChannelNECO.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-151-400x400.png",Neco Channel
+https://nl.utako.moe/neco/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="Dlife.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-131-400x400.png",Dlife
+https://nl.utako.moe/dlife/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="ToeiChannel.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-173-400x400.png",Toei Channel
+https://nl.utako.moe/toei/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="FIGHTINGTVSamurai.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-128-400x400.png",Fighting TV Samurai
+https://nl.utako.moe/fighting_tv/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="EntermeiTele.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-187-400x400.png",Entermei Tele
+https://nl.utako.moe/entermei_tele/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="SportsLivePlus.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-106-400x400.png",Sport Live Plus
+https://nl.utako.moe/sport_live_plus/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="HomeDramaChannel.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-141-400x400.png",Home Drama Channel
+https://nl.utako.moe/homedrama/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="ChannelGinga.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-135-400x400.png",Channel Ginga
+https://nl.utako.moe/gingach/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="TABIChannel.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-143-400x400.png",Tabi Channel
+https://nl.utako.moe/tabi/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="Pigoo.jp" tvg-logo="http://livean.yhvserve.com:9083/query/s/epy3fdtnc1oI4z5JrjZzAQ==.jpg?type=live&thumbnail=thumbnail_small.jpg",Pigoo (NSFW)
+https://nl.utako.moe/pigoo/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="CS" tvg-id="VParadise.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-195-400x400.png",V Paradise (NSFW)
+https://nl.utako.moe/v_paradise/tracks-v1a1/mono.ts.m3u8
