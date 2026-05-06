@@ -26,53 +26,14 @@ chmod +x $PREFIX/bin/tv_grab_tempest
 
 ---
 
-✔ Bước 2 — Khai báo grabber để TVH nhận diện
-
-TVHeadend chỉ hiển thị các grabber có file .desc trong ~/.xmltv
-
-Tạo:
-
-mkdir -p ~/.xmltv
-nano ~/.xmltv/tv_grab_tempest.desc
-
-Dán vào:
-
-tv_grab_tempest
-Tempest XMLTV Importer
-baseline
-Lưu lại.
-
-
----
-
-✔ Bước 3 — Khởi động lại TVHeadend với đúng thư mục cấu hình
+✔ Bước 2 — Khởi động lại TVHeadend với đúng thư mục cấu hình
 
 tvheadend -c ~/tvhdata
 
 
 ---
 
-Bước 4 - Sửa lại tên Module
-
-Sẽ có trường hợp Tvheadend lấy phần đầu file xml làm tên module, để sửa nó thực hiện như sau:
-Sửa:
-nano tvhdata/epggrab/config
-và sửa lại như này
-"modules": {
-                "/data/data/com.termux/files/usr/bin/tv_grab_tempest": {
-                        "class": "epggrab_mod_int_xmltv",
-                        "dn_chnum": 0,
-                        "scrape_extra": false,
-                        "scrape_onto_desc": false,
-                        "use_category_not_genre": false,
-                        "name": "NHKSchedule",
-                        "type": "Internal",
-                        "enabled": true,
-                        "priority": 3
-                },
-                lưu lại:Ctrl x y Enter
-
-✔ Bước 5 — Vào TVH WebUI
+✔ Bước 3 — Vào TVH WebUI
 
 Đi tới:
 
@@ -146,32 +107,7 @@ Chỉ cần grabber nằm trong /usr/bin hoặc /usr/local/bin.
 
 ---
 
-✅ Bước 2 — Khai báo grabber để TVHeadend nhận diện
-
-TVHeadend đọc file .desc từ:
-
-~/.xmltv/
-
-Tạo thư mục:
-
-mkdir -p ~/.xmltv
-
-Tạo file:
-
-nano ~/.xmltv/tv_grab_tempest.desc
-
-Nội dung:
-
-tv_grab_tempest
-Tempest XMLTV Importer
-baseline
-
-Lưu.
-
-
----
-
-✅ Bước 3 — Chạy TVHeadend với folder config
+✅ Bước 2 — Chạy TVHeadend với folder config
 
 🔥 Quan trọng
 
@@ -217,36 +153,8 @@ Và guide trong:
 
 ---
 
-✅ Bước 4 — Sửa tên module (optional)
 
-Giống như hướng dẫn của bạn.
-
-Mở file:
-
-nano tvhdata/epggrab/config
-
-Hoặc với bản systemd:
-
-nano /home/hts/.hts/tvheadend/epggrab/config
-
-Sửa block:
-
-"modules": {
-    "/usr/bin/tv_grab_tempest": {
-        "class": "epggrab_mod_int_xmltv",
-        "name": "NHKSchedule",
-        "type": "Internal",
-        "enabled": true,
-        "priority": 3
-    },
-}
-
-Lưu → restart TVHeadend.
-
-
----
-
-✅ Bước 5 — Cấu hình trong WebUI
+✅ Bước 3 — Cấu hình trong WebUI
 
 Đi tới:
 
